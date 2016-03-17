@@ -3,7 +3,7 @@ body {
   min-width: 700px;
 }
 
-div.container {
+.container {
   padding: 20px;
   background-color: #eee;
   border: 1px solid #999;
@@ -14,6 +14,7 @@ div.container {
   width: 200px;
   float: left;
   margin-right: 20px;
+  background-color: #fff;
 }
 
 .left span {
@@ -31,6 +32,7 @@ img.logo {
   width: 82px;
   float: right;
   margin-left: 20px;
+  background-color: #fff
 }
 
 .right img {
@@ -43,6 +45,7 @@ img.logo {
 
 .middle {
   overflow: auto;
+  background-color: #fff;
 }
 
 .middle p:first-child {
