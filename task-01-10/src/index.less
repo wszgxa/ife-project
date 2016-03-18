@@ -1,0 +1,40 @@
+html,body {
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+.container {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .item {
+        padding: 20px;
+        width: 150px;
+        border: 1px solid #f00;
+    }
+    .item1 {
+        height: 120px;
+    }
+    .item2 {
+        height: 100px;
+    }
+    .item3 {
+        height: 40px;
+    }
+    .item4 {
+        height: 200px;
+        border: 1px solid #0f0;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        align-items: flex-start;
+        .item4 {
+            order: -1;
+        }
+    }
+    
+}
