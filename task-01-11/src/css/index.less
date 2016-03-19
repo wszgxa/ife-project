@@ -24,7 +24,8 @@ body {
     -webkit-box-align: center;
 }
 .container {
-    width: 100%;
+    max-width: 10rem;
+    margin: 0 auto;
     background-color: @bg_color;
 }
 
@@ -54,6 +55,8 @@ body {
 }
 
 // detail
+
+// header
 header {
     position: relative;
     text-align: center;
@@ -75,6 +78,62 @@ header {
         text-decoration: none;
     }
 }
+
+//navbar
+.navbar {
+    background-color: #fff;
+    font-size: 16px;
+    ul {
+        .flex();        
+    }
+    a {
+        color: @font_color;
+        flex-grow: 1;
+        text-align: center;
+        height: 1.2rem;
+        line-height: 1.2rem;
+    }
+    a.active {
+        border-bottom: 0.12rem solid #80cbd1;
+
+    }
+}
+
+.main-img {
+    width: 10rem;
+    img {
+        width: 10rem;
+    }
+}
+.tag {
+    .flex();
+    position: relative;
+    background-color: @bg_content_color;
+    .tag-item {
+        flex-grow: 1;
+        padding: 0.5rem 0;
+        font-size: 14px;
+        color: @font_black;
+        text-align: center;
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0.25rem;
+        bottom: 0;
+        width: 9.5rem;
+        border-bottom: 2px solid @border_color;
+    }
+}
+
+
+
 
 
 

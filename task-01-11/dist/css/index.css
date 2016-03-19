@@ -139,7 +139,8 @@ body {
   -webkit-box-align: center;
 }
 .container {
-  width: 100%;
+  max-width: 10rem;
+  margin: 0 auto;
   background-color: #F1F2F4;
 }
 @font-face {
@@ -186,4 +187,61 @@ header .return {
   font-size: 18px;
   color: #fff;
   text-decoration: none;
+}
+.navbar {
+  background-color: #fff;
+  font-size: 16px;
+}
+.navbar ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar a {
+  color: #4E4E4F;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.navbar a.active {
+  border-bottom: 0.12rem solid #80cbd1;
+}
+.main-img {
+  width: 10rem;
+}
+.main-img img {
+  width: 10rem;
+}
+.tag {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: #fff;
+}
+.tag .tag-item {
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0.5rem 0;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+}
+.tag .tag-item img {
+  display: block;
+  margin: 0 auto;
+  width: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+.tag:after {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  bottom: 0;
+  width: 9.5rem;
+  border-bottom: 2px solid #D5D6D7;
 }
