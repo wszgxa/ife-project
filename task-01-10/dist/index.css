@@ -23,7 +23,7 @@ body {
   flex-wrap: wrap;
 }
 .container .item {
-  width: 150px;
+  width: 148px;
   border: 1px solid #f00;
 }
 .container .item1 {
