@@ -9,9 +9,11 @@ body {
 }
 .container {
   width: 100%;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-align-items: center;
   -ms-flex-align: center;
   -ms-grid-row-align: center;
@@ -21,7 +23,6 @@ body {
   flex-wrap: wrap;
 }
 .container .item {
-  padding: 20px;
   width: 150px;
   border: 1px solid #f00;
 }
