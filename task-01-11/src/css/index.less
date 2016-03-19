@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@import "./reset";
+@import "./varible";
+
+/* =layout
+ -------------------------------------------------------------------- */
+
+html, body {
+    width: 100%; 
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    background-color: @bg_color;
+}
+body {
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    color: @font_color;
+    -webkit-text-size-adjust: none; /* 禁止文字缩放 */
+    -webkit-user-select: none; /* 禁止选取文字/图片(iOS) */
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+}
+.container {
+    width: 100%;
+    background-color: @bg_color;
+}
+
+// iconfont
+
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1458374559'); /* IE9*/
+  src: url('../font/iconfont.ttf?t=1458374559') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg?t=1458374559#iconfont') format('svg'); /* iOS 4.1- */
+}
+                    
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size: 16px;
+  font-style:normal;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-arrow:before { content: "\e600"; }
+
+
+/* =grid
+ -------------------------------------------------------------------- */
+.flex {
+    display: flex;
+}
+
+// detail
+header {
+    position: relative;
+    text-align: center;
+    background-color: @header_bg_color;
+    height: 1.16rem;
+    line-height: 1.16rem;
+    h3 {
+        font-size: 18px;
+        font-weight: 800;
+        color: #fff;
+    }
+    .return {
+        position: absolute;
+        left: 0.2rem;
+        top: 0;
+        font-weight: 600;
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+
+
+
