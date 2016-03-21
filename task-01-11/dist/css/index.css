@@ -245,3 +245,32 @@ header .return {
   width: 9.5rem;
   border-bottom: 2px solid #D5D6D7;
 }
+.banner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  padding: 10px 0;
+}
+.banner .banner-item {
+  width: 3.3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner .banner-item img {
+  width: 2rem;
+  height: 2rem;
+}
+.banner .banner-item h4 {
+  font-size: 18px;
+  color: #000;
+  padding: 2px;
+}
+.banner .banner-item p {
+  font-size: 16px;
+  padding: 5px;
+}
+.banner .banner-item:nth-child(1n+2) {
+  border-left: 2px solid #D5D6D7;
+}

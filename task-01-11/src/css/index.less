@@ -131,6 +131,33 @@ header {
         border-bottom: 2px solid @border_color;
     }
 }
+.banner {
+    .flex();
+    position: relative;
+    background-color: @bg_content_color;
+    padding: 10px 0;
+    .banner-item {
+        width: 3.3rem;
+        margin: 0 auto;
+        text-align: center;
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+        h4 {
+            font-size: 18px;
+            color: @font_black;
+            padding: 2px;
+        }
+        p {
+            font-size: 16px;
+            padding: 5px;
+        }
+    }
+    .banner-item:nth-child(1n+2) {
+        border-left: 2px solid @border_color;
+    }
+}
 
 
 
