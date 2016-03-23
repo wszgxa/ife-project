@@ -196,6 +196,8 @@ header {
             .cell {
                 height: 1.1rem;
                 text-align: center;
+                font-size: 14px;
+                font-weight: 800;
                 line-height: 1.25rem;
                 background-color: @bg_color;
             }
@@ -205,7 +207,71 @@ header {
         padding-top: 0.3rem;
     }
 }
+.article {
+    background-color: @bg_content_color;
+    margin-top: 0.35rem;
+    .article-content {
+        .flex();
+        justify-content: space-between;
+        position: relative;
+        width: 9.5rem;
+        margin: 0 auto;
+        padding: 0.3rem 0;
+        &:after {
+            content: "";
+            position: absolute;
+            left: -0.25rem;
+            bottom: 0;
+            width: 10rem;
+            border-bottom: 2px solid @border_color;
+        }
+    }
+    .art-img {
+        width: 3rem;
+        height: 2.1rem;
+        img {
+            width: 3rem;
+            height: 2.1rem;
+        }
+    }
+    .summary {
+        width: 6.2rem;
+        .flex();
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+            font-size: 20px;
+        }  
+    }
+    .source {
+            color: @font_shadow;
+            font-size: 14px;
+            span {
+                font-size: 15px;
+            }
+        }
+    .article-content-other {
+        width: 9.5rem;
+        margin: 0 auto;
+        padding: 0.3rem 0;
+        .t-header {
+            font-size: 20px;
+            padding: 0.1rem 0;
+        }
+        .img-wrap {
+            .flex();
+            justify-content: space-between;
+            img {
+                width: 3rem;
+                height: 2.1rem;
+            }
+        }
+        .source {
+            padding: 0.1rem;
+        }
 
+    }
+}
 
 
 
