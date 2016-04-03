@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+  font-family: 微软雅黑, Times, serif;
+  min-width: 800px;
+}
+
+header, footer {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: block;
+  top: 0px;
+}
+
+header .logo {
+  height: 44px;
+  width: 44px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 8px
+}
+
+header nav {
+  display: block;
+  float: right;
+  margin-right: 20px;
+}
+
+header ul {
+  margin: 0px;
+}
+
+header nav li {
+  display: inline-block;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+header nav li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+header nav li a:visited {
+  color: #ddd;
+}
+
+main {
+  display: block;
+  margin-right: 460px;
+}
+
+article {
+  background-color: white;
+  border-right: 2px solid #888;
+  border-bottom: 2px solid #888;
+  padding: 30px 15px;
+  margin: 20px 10px;
+}
+
+article::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+article h1 {
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 0px 0px 20px 0px;
+}
+
+article h2 {
+  font-weight: bold;
+  font-size: 15px;
+  color: #aaa;
+}
+
+article address {
+  font-size: 13px;
+  font-style: normal;
+  color: #aaa;
+}
+
+article p {
+  text-indent: 2em;
+}
+
+article ul {
+  list-style-type: none;
+}
+
+article figure {
+  float: left;
+  border: 1px solid #aaa;
+  padding: 10px;
+  margin: 10px;
+}
+
+article figure figcaption {
+  text-align: center;
+}
+
+article figure img {
+  margin-top: 10px;
+  border: 1px solid #aaa;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #aaa;
+  border-collapse: collapse;
+}
+
+table thead {
+  background-color: #111;
+  color: #fff;
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #aaa;
+  padding: 5px;
+}
+
+table tbody {
+  font-family: 宋体, Times, serif;
+}
+
+table tfoot {
+  background-color: #aaa;
+  color: #000;
+  font-weight: bold;
+}
+
+aside {
+  display: block;
+  width: 450px;
+  float: right;
+  background-color: white;
+  margin: 20px 10px;
+  border-right: 2px solid #888;
+  border-bottom: 2px solid #888;
+}
+
+aside h1 {
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 20px;
+  padding-left: 10px;
+  border-left: 5px solid #aaa;
+}
+
+aside form {
+  margin: 20px;
+}
+
+aside form fieldset {
+  border: none;
+}
+
+aside fieldset .line-container {
+  display: block;
+  margin-bottom: 10px;
+}
+
+aside fieldset .label {
+  width: 130px;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+
+aside fieldset .line-container .instruction {
+  margin-left: 130px;
+}
+
+aside fieldset input[type="password"], aside fieldset input[type="email"] {
+  width: 170px;
+  border: 1px solid #aaa;
+}
+
+aside fieldset textarea {
+  height: 100px;
+  width: 220px;
+  border: 1px solid #aaa;
+  resize: vertical;
+}
+
+aside button {
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  color: white;
+  background-color: #0011ff;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+footer .copyright {
+  color: white;
+  text-align: center;
+  display: block;
+  line-height: 60px;
+}
